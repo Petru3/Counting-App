@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url(../Fonts/verdana.ttf);
+}
+::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background: #28282B;
+  background-size: cover;
+  width: 100%;
+  font-family: "Verdana";
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 75px;
+  left: 200px;
+  -webkit-animation: dropIt 3s alternate ease;
+          animation: dropIt 3s alternate ease;
+}
+
+.int {
+  width: 500px;
+  display: flex;
+  height: 500px;
+  position: relative;
+  left: 710px;
+  top: 200px;
+}
+@media (max-width: 1024px) {
+  .int {
+    left: 262px;
+  }
+}
+@media (max-width: 768px) {
+  .int {
+    left: 134px;
+  }
+}
+@media (max-width: 480px) {
+  .int {
+    left: -15px;
+  }
+}
+
+.all .titleOfPage {
+  color: #f1f1f1;
+  font-weight: 100;
+  font-size: medium;
+  position: absolute;
+  top: 195px;
+  left: 44px;
+  width: 423px;
+  z-index: 5;
+  -webkit-animation: alternate 2s ease dropIt;
+          animation: alternate 2s ease dropIt;
+}
+
+@-webkit-keyframes dropIt {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropIt {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.mid .inputNumber {
+  position: absolute;
+  top: 265px;
+  left: 160px;
+  -webkit-animation: alternate 2s ease dropIt;
+          animation: alternate 2s ease dropIt;
+}
+.mid .inputNumber input {
+  border-radius: 40px;
+  background-color: transparent;
+  border: 4.5px solid #F5F5F5;
+  color: #F5F5F5;
+  height: 45px;
+  width: 170px;
+  font-size: 40px;
+  text-align: center;
+}
+.mid .inputNumber input:hover {
+  outline: none;
+}
+.mid .increment {
+  z-index: 5;
+  position: absolute;
+  top: 265px;
+  left: 95px;
+  -webkit-animation: alternate 2s ease dropIt;
+          animation: alternate 2s ease dropIt;
+}
+.mid .increment button {
+  background-color: #87A7B3;
+  width: 55px;
+  height: 55px;
+  border-radius: 23px;
+  outline: none;
+}
+.mid .increment button svg {
+  position: relative;
+  top: 0px;
+  right: 11px;
+  left: 0px;
+  width: 40px;
+  height: auto;
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+.mid .increment button:focus {
+  background-color: #546a72;
+}
+.mid .decrement {
+  z-index: 5;
+  position: absolute;
+  display: block;
+  float: right;
+  top: 265px;
+  right: 95px;
+  -webkit-animation: alternate 2s ease dropIt;
+          animation: alternate 2s ease dropIt;
+}
+.mid .decrement button {
+  background-color: #87A7B3;
+  width: 55px;
+  height: 55px;
+  border-radius: 23px;
+  outline: none;
+}
+.mid .decrement button svg {
+  position: relative;
+  width: 40px;
+  height: auto;
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+.mid .decrement button:focus {
+  background-color: #546a72;
+}
+
+.waves svg {
+  position: relative;
+  top: 290px;
+  z-index: -1;
+}
+@media (max-width: 1024px) {
+  .waves svg {
+    width: 1024px;
+  }
+}
+@media (max-width: 768px) {
+  .waves svg {
+    width: 768px;
+  }
+}
+@media (max-width: 480px) {
+  .waves svg {
+    width: 480px;
+  }
+}
+
+.please h3 {
+  color: #dbd7d7;
+  z-index: 5;
+  position: absolute;
+  top: 340px;
+  left: 130px;
+  opacity: 70%;
+  width: 240px;
+  -webkit-animation: slideFromRight 3s ease alternate;
+          animation: slideFromRight 3s ease alternate;
+}
+
+@-webkit-keyframes slideFromRight {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+footer {
+  width: 1920px;
+  height: 100px;
+  background-color: #242424;
+  position: relative;
+  top: 200px;
+  border-top: 2px solid #f1f1f1;
+}
+@media (max-width: 1024px) {
+  footer {
+    width: 1024px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    width: 768px;
+    top: 200px;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    width: 480px;
+    top: 260px;
+  }
+}
+footer .nameCoder {
+  color: #f1f1f1;
+  font-size: 0.6em;
+  text-shadow: 10px 10px 17px rgba(0, 0, 0, 0.8);
+  position: relative;
+  text-align: center;
+  top: 30px;
+  left: 0px;
+}
+@media (max-width: 1024px) {
+  footer .nameCoder {
+    left: 20px;
+  }
+}
+@media (max-width: 480px) {
+  footer .nameCoder {
+    width: 300px;
+    left: 90px;
+  }
+}/*# sourceMappingURL=app.css.map */
